@@ -1,0 +1,11 @@
+<div class="course-container" *ngFor="let category of categories">
+  <div>
+    <img src="{{ category.strCategoryThumb }}" width="560" height="280" />
+  </div>
+  <div style="margin: 0px 10px">
+    <h1>Category: {{ category.strCategory }}</h1>
+  </div>
+  <div style="margin: 20px 10px">
+    <p>{{ category.strCategoryDescription }}</p>
+  </div>
+</div>
