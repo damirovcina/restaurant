@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CategoriesService } from '../categories.service';
-import { Category } from '../shared/category';
+
 
 
 @Component({
@@ -12,13 +11,11 @@ import { Category } from '../shared/category';
 export class SingleProductDetailComponent implements OnInit {
   singleProduct: {id: number, name: string, thumb: string};
 
-  allFood : Category[];
+  
 
-  constructor(private route: ActivatedRoute,
-              private cateSer : CategoriesService){}
+  constructor(private route: ActivatedRoute){}
 
   ngOnInit(): void {
-    this.allFood = this.cateSer.returnAllFood()
     this.singleProduct = {
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name'],
