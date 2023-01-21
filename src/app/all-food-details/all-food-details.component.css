@@ -7,3 +7,16 @@
 p {
   font-size: 1.5rem;
 }
+
+.thumbnail {
+  width: 560px;
+  height: 280px;
+}
+
+.name {
+  margin: 0px 10px
+}
+
+.description {
+  margin: 20px 10px
+}

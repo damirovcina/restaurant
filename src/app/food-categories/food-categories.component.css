@@ -50,3 +50,9 @@
     flex-direction: column;
   }
 }
+
+.h2-categories {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 3rem
+}

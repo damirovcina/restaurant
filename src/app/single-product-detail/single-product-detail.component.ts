@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CategoriesService } from '../categories.service';
+import { Category } from '../shared/category';
 
 
 @Component({
@@ -8,18 +10,19 @@ import { ActivatedRoute } from '@angular/router'
   styleUrls: ['./single-product-detail.component.css']
 })
 export class SingleProductDetailComponent implements OnInit {
+  singleProduct: {id: number, name: string, thumb: string};
 
+  allFood : Category[];
 
-   product: {id: number, name: string}  
-
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private cateSer : CategoriesService){}
 
   ngOnInit(): void {
-    this.product = {
+    this.allFood = this.cateSer.returnAllFood()
+    this.singleProduct = {
       id: this.route.snapshot.params['id'],
-      name: this.route.snapshot.params['name']
-    }
+      name: this.route.snapshot.params['name'],
+      thumb: this.route.snapshot.params['thumb'],
+    };
   }
-
-
 }
