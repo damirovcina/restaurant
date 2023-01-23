@@ -1,22 +1,22 @@
-.course-container {
+.food-details-container {
   width: 580px;
   margin: 20px auto;
-  padding: 10px 10px;
+  padding: 10pxx;
   background-color: #fff;
 }
 p {
   font-size: 1.5rem;
 }
 
-.thumbnail {
+.img-category {
   width: 560px;
   height: 280px;
 }
 
-.name {
+.category-name {
   margin: 0px 10px
 }
 
-.description {
+.category-description {
   margin: 20px 10px
 }

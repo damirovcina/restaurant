@@ -9,7 +9,7 @@ import { SingleProductDetailComponent } from "./single-product-detail/single-pro
 const appRoutes: Routes = [
     {path: '', component: HomeStartComponent },
     {path: 'categories', component: FoodCategoriesComponent},
-    {path: 'categories/:id/:name/:thumb' , component: SingleProductDetailComponent},
+    {path: 'categories/:id' , component: SingleProductDetailComponent},
     {path: 'details', component: AllFoodDetailsComponent },
     {path: '**' , component: PageNotFoundComponent}
 ] 

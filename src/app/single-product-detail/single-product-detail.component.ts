@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { ActivatedRoute, Params } from '@angular/router';
+import { CategoriesService } from '../categories.service';
+import { Categories } from '../shared/categories';
+import { Category } from '../shared/category';
 
 
 @Component({
@@ -9,17 +11,32 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./single-product-detail.component.css']
 })
 export class SingleProductDetailComponent implements OnInit {
-  singleProduct: {id: number, name: string, thumb: string};
-
+  singleProduct: Category[];
+  sveKategorije: Category[] = Categories
+  // singleProductValue : any
   
 
-  constructor(private route: ActivatedRoute){}
+  constructor(private route: ActivatedRoute,
+              private cateServ : CategoriesService ){}
 
   ngOnInit(): void {
-    this.singleProduct = {
-      id: this.route.snapshot.params['id'],
-      name: this.route.snapshot.params['name'],
-      thumb: this.route.snapshot.params['thumb'],
-    };
-  }
+    const id = +this.route.snapshot.params['id']
+    this.singleProduct = [ this.cateServ.getFooooooood(id)]
+
+
+    console.log(this.cateServ.getFooooooood(id));
+    console.log([ this.cateServ.getFooooooood(id).id]);
+    console.log([ this.cateServ.getFooooooood(id).name]);
+    console.log(this.singleProduct);
+
+    
+    this.route.params.subscribe(
+      (params : Params) => {
+        this.singleProduct = [ this.cateServ.getFooooooood(+params['id'])] 
+      }
+    )
+      //  this.singleProductValue = JSON.stringify(this.singleProduct)
+      }
+    
+  
 }

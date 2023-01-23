@@ -17,8 +17,8 @@ export class FoodCategoriesComponent  {
 
   constructor(private router : Router) {}
 
-    onClickDetail(category) {
-      this.router.navigate(['/categories', category.id, category.name, category.thumb ]);
+    onClickDetail(id: number) {
+      this.router.navigate(['/categories', id ]);
     }    
   
 }

@@ -3,6 +3,15 @@ import { Category } from "./shared/category";
 
 export class CategoriesService {
 
+  getFooooooood(id : number){
+    const food = this.Categories.find(
+      (category) => {
+        return category.id === id
+      }
+    )
+    return food;
+  }
+
 
      private Categories: Category[] = [
         {
