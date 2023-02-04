@@ -1,10 +1,13 @@
 <div class="food-details-container" *ngFor="let category of categories">
-  <div>
-    <img src="{{ category.thumb }}" class="img-category" />
+  <div class="img-category">
+    <img src="{{ category.thumb }}" />
   </div>
-  <div class="category-name">
+  <!-- <div class="category-name">
     <h1>Category: {{ category.name }}</h1>
-  </div>
+  </div> -->
+
+  <h1 class="category-name">Category: {{ category.name }}</h1>
+
   <div class="category-description">
     <p>{{ category.description }}</p>
   </div>

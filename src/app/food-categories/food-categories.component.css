@@ -5,10 +5,10 @@
   border-radius: 5px;
 }
 
-.categories-title {
+.heading-categories {
   text-align: center;
   margin: 10px auto;
-  font-size: 3rem
+  font-size: 3rem;
 }
 
 .categories-wraper {
@@ -23,7 +23,7 @@
 
 .card-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 5px ;
+  margin: 5px;
   padding: 5px;
   width: 250px;
 }
@@ -50,9 +50,12 @@
   background-color: #555;
 }
 
+img {
+  width: 100%;
+}
+
 @media screen and (max-width: 700px) {
   .categories-container {
     flex-direction: column;
   }
 }
-
