@@ -1,4 +1,14 @@
+<div class="food-details-container">
+  <div class="img-category">
+    <img src="{{ singleProduct.thumb }}" />
+  </div>
+  <!-- <div class="category-name">
+    <h1>Category: {{ category.name }}</h1>
+  </div> -->
 
-<div >
-    <p>Product u picked: {{singleProduct}} </p>
+  <h1 class="category-name">Category: {{ singleProduct.name }}</h1>
+
+  <div class="category-description">
+    <p>{{ singleProduct.description }}</p>
+  </div>
 </div>
