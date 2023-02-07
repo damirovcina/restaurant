@@ -9,5 +9,4 @@ import { Category } from '../shared/category';
 })
 export class AllFoodDetailsComponent {
   categories: Category[] = Categories;
-
 }
