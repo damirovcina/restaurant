@@ -1,3 +1,11 @@
- <p>name of product is {{product.id}}</p>
-<p>categories is {{product.name}}</p>
+<div class="food-details-container">
+  <div class="img-category">
+    <img src="{{ singleProduct.thumb }}" />
+  </div>
 
+  <h1 class="category-name">Category: {{ singleProduct.name }}</h1>
+
+  <div class="category-description">
+    <p>{{ singleProduct.description }}</p>
+  </div>
+</div>

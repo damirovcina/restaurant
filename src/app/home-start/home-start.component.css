@@ -1,5 +1,13 @@
-.about-section {
+.home-page-container {
     padding: 50px;
     text-align: center;
     color: #000;
   }
+
+  .title {
+    font-size: 4rem
+  }
+
+  .subtitle {
+    font-size: 2rem
+  } 
