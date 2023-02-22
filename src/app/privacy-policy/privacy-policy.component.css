@@ -1,0 +1,23 @@
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background: #474e5d url(../../assets/about_breadcrumb.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.categories-container {
+  width: 1000px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.heading-categories {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 30px;
+}
+.heading-categories p {
+  margin-bottom: 1rem;
+}

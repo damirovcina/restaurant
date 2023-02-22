@@ -1,13 +1,12 @@
 .categories-container {
-  margin: 10px 0px;
+  width: 1000px;
+  margin: 40px auto;
   padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
 }
 
 .heading-categories {
   text-align: center;
-  margin: 10px auto;
+  padding-bottom: 40px;
   font-size: 3rem;
 }
 
@@ -25,7 +24,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 5px;
   padding: 5px;
-  width: 250px;
+  width: 300px;
 }
 
 .card-title {

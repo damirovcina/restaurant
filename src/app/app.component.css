@@ -1,9 +1,25 @@
-.main-container {
-  width: 880px;
-  margin: 10px auto;
+header {
+  background-color: #333;
+  padding: 15px 20px;
+  height: 80px;
 }
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+header .logo img {
+  height: 50px;
+  display: block;
+}
+
 .nav-container {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 880px;
 }
 ul {
@@ -22,9 +38,15 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: rgb(165, 165, 165);
+}
+.login a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
