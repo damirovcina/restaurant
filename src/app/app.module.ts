@@ -9,6 +9,11 @@ import { AppRoutingService } from './appRouting.service';
 import { SingleProductDetailComponent } from './single-product-detail/single-product-detail.component';
 import { CategoriesService } from './categories.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AllFoodDetailsComponent,
     HomeStartComponent,
     SingleProductDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AboutComponent,
+    ContactComponent,
+    PrivacyPolicyComponent,
+    TermsOfUseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
