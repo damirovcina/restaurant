@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Categories } from '../shared/categories';
 import { Category } from '../shared/category';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-foodcategories',
@@ -10,5 +11,9 @@ import { Category } from '../shared/category';
 export class FoodCategoriesComponent {
   categories: Category[] = Categories;
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  onNavigate(name: string) {
+    this.router.navigate(['categories', name]);
+  }
 }

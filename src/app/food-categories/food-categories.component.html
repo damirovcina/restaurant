@@ -14,11 +14,8 @@
           <div>
             <h2 class="card-title">{{ category.name }}</h2>
             <p>
-              <button
-                [routerLink]="['/categories', category.id]"
-                class="card-button"
-              >
-                Detail
+              <button (click)="onNavigate(category.name)">
+                See More Details About This Food
               </button>
             </p>
           </div>

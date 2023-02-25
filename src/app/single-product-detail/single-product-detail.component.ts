@@ -18,7 +18,8 @@ export class SingleProductDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.singleProduct = this.cateServ.getFood(
-      Number(this.route.snapshot.params['id'])
+      this.route.snapshot.params['name']
     );
+    console.log(this.singleProduct);
   }
 }
