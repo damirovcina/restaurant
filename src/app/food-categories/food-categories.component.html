@@ -1,6 +1,4 @@
 <div class="categories-container">
-  <!-- <a routerLink="Home">Go to Home Page</a>localhost:4200/About/Home -->
-  <!-- <a (click)="navigateToHome()">Go to Home Page</a> -->
   <div>
     <h2 class="heading-categories">Categories</h2>
   </div>
@@ -14,10 +12,10 @@
             <h2 class="card-title">{{ category.name }}</h2>
             <p>
               <button
-                [routerLink]="['/categories', category.id]"
+                [routerLink]="['/categories', category.name]"
                 class="card-button"
               >
-                Detail
+                More
               </button>
             </p>
           </div>

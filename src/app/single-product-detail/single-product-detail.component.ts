@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriesService } from '../categories.service';
 import { Category } from '../shared/category';
 
@@ -13,12 +13,17 @@ export class SingleProductDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private cateServ: CategoriesService
+    private cateServ: CategoriesService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.singleProduct = this.cateServ.getFood(
-      Number(this.route.snapshot.params['id'])
+      /* Number(this.route.snapshot.params['id']) */
+      this.route.snapshot.params['name']
     );
+  }
+  goBack() {
+    this.router.navigate(['/categories']);
   }
 }

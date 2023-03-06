@@ -1,9 +1,15 @@
 <footer>
   <div class="container">
     <div class="row">
-      <p><a href="">Privacy Policy</a></p>
-      <h3>Angular Restaurant</h3>
-      <p><a href="">Terms of Use</a></p>
+      <div>
+        <p>Copyright {{ currentYear }} | All Rights Reserved.</p>
+      </div>
+      <div class="polyTerms">
+        <p>
+          <a routerLink="/policy" fragment="policy-anchor">Privacy Policy</a>
+        </p>
+        <p><a routerLink="/terms" fragment="terms-anchor">Terms of Use</a></p>
+      </div>
     </div>
   </div>
 </footer>

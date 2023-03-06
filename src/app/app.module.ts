@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { FoodCategoriesComponent } from './food-categories/food-categories.component';
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,11 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     PrivacyPolicyComponent,
     TermsOfUseComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingService
-  ],
+  imports: [BrowserModule, AppRoutingService, HttpClientModule],
   providers: [CategoriesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -8,15 +8,18 @@ import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SingleProductDetailComponent } from './single-product-detail/single-product-detail.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeStartComponent },
+  { path: 'home', component: HomeStartComponent },
   { path: 'about', component: AboutComponent },
   { path: 'categories', component: FoodCategoriesComponent },
-  { path: 'categories/:id', component: SingleProductDetailComponent },
+  { path: 'categories/:name', component: SingleProductDetailComponent },
   { path: 'details', component: AllFoodDetailsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'policy', component: PrivacyPolicyComponent },
+  { path: 'terms', component: TermsOfUseComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
